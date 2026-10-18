@@ -6,7 +6,7 @@ rm -rf build output third_party
 mkdir -p third_party
 
 echo "[2/6] 使用环境 NDK 27 ..."
-NDK_HOME="/usr/local/lib/android/sdk/ndk/27.3.1"
+NDK_HOME="$ANDROID_NDK_HOME"
 if [ ! -d "$NDK_HOME" ]; then
   NDK_HOME=$(ls -d /usr/local/lib/android/sdk/ndk/27* 2>/dev/null | head -1)
 fi
