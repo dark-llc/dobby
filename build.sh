@@ -15,7 +15,7 @@ export ANDROID_NDK_HOME=$NDK_HOME
 
 echo "[3/6] 克隆 Dobby (chiteroman/master，规避 arm64 asm 报错) ..."
 DOBBY_DIR="third_party/Dobby"
-git clone --depth=1 -b master https://github.com/chiteroman/Dobby.git "$DOBBY_DIR"
+git clone --depth=1 -b master https://github.com/jmpews/Dobby.git "$DOBBY_DIR"
 SRC_DIR=$PWD/$DOBBY_DIR
 
 echo "[4/6] CMake 配置 (arm64-v8a) ..."
